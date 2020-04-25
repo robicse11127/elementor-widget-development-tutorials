@@ -111,7 +111,7 @@ final class MY_Elementor_Widget {
     * @since 1.0.0
     */
     public function init_widgets() {
-        require_once MYEW_PLUGIN_PATH . '/widgets/example.php';
+        require_once MYEW_PLUGIN_PATH . '/widgets/preview-card.php';
     }
 
     /**
