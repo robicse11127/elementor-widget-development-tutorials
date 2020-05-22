@@ -1,5 +1,3 @@
-/* Public Style */
-
 /* Preview Card Style */
 .image-card {
     width: 100%;
@@ -18,8 +16,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    max-width: 100%;
-    height: 230px;
     z-index: 0;
 }
 .image-card .image a {
@@ -32,20 +28,13 @@
     right: 0px;
     z-index: 10;
 }
-.image-card .content {
-    padding: 30px 30px;
-}
 .image-card .content p:last-child {
     margin-bottom: 0px;
-}
-.image-card .title {
-    margin-bottom: 15px;
 }
 .image-card .title h2 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 23px;
     font-weight: 500;
-    color: #111;
     line-height: 30px;
     margin: 0;
 }
@@ -136,4 +125,98 @@
 .badge-gray {
     background-color: #707070;
     color: #fff;
+}
+
+/* Pricing Table */
+.pricing-table {
+    background: #fff;
+}
+.pricing-table .pricing-table-header {
+    position: relative;
+    padding: 40px 30px 30px 30px;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    z-index: 0;
+}
+.pricing-table .pricing-table-header .popular {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: royalblue;
+    color: #fff;
+    z-index: 10;
+    padding: 5px 10px;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0;
+    border-radius: 4px;
+    font-family: monospace;
+}
+.pricing-table .pricing-table-header .header-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px 0 0 0;
+}
+.pricing-table .pricing-table-header .header-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 15px 0;
+    line-height: 30px;
+}
+.pricing-table .pricing-table-price {
+    background-color: #f9f9f9;
+    padding: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pricing-table .pricing-table-price .price {
+    font-family: 'Nunito Sans', monospace;
+    font-size: 48px;
+    font-weight: 700;
+    padding: 0px 5px;
+}
+.pricing-table .pricing-table-price .price-divider {
+    font-size: 48px;
+}
+.pricing-table .pricing-table-price .price-duration {
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+}
+.pricing-table .pricing-table-feature {
+    padding: 20px;
+    text-align: center;
+}
+.pricing-table .pricing-table-feature div {
+    padding: 10px 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid rgba( 0, 0, 0, 0.02 );
+}
+.pricing-table .pricing-table-feature div:last-child {
+    border: 0;
+}
+.pricing-table .pricing-table-action {
+    padding: 30px;
+    text-align: center;
+}
+.pricing-table .pricing-table-action a {
+    display: inline-block;
+    padding: 12px 26px;
+    background-color: #707070;
+    color: #fff;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.9;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+.pricing-table .pricing-table-action a:hover {
+    background-color: #562dd4;
+    transition: all 0.3s ease-in-out;
 }

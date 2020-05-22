@@ -112,6 +112,7 @@ final class MY_Elementor_Widget {
     */
     public function init_widgets() {
         require_once MYEW_PLUGIN_PATH . '/widgets/preview-card.php';
+        require_once MYEW_PLUGIN_PATH . '/widgets/pricing-table.php';
     }
 
     /**
