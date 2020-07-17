@@ -66,9 +66,16 @@ final class MY_Elementor_Widget {
     * @since 1.0.0
     */
     public function scripts_styles() {
+        wp_register_style( 'myew-owl-carousel', MYEW_PLUGIN_URL . 'assets/vendor/owl-carousel/css/owl.carousel.min.css', [], rand(), 'all' );
+        wp_register_style( 'myew-owl-carousel-theme', MYEW_PLUGIN_URL . 'assets/vendor/owl-carousel/css/owl.theme.default.min.css', [], rand(), 'all' );
+        wp_register_script( 'myew-owl-carousel', MYEW_PLUGIN_URL . 'assets/vendor/owl-carousel/js/owl.carousel.min.js', [ 'jquery' ], rand(), true );
+
         wp_register_style( 'myew-style', MYEW_PLUGIN_URL . 'assets/dist/css/public.min.css', [], rand(), 'all' );
         wp_register_script( 'myew-script', MYEW_PLUGIN_URL . 'assets/dist/js/public.min.js', [ 'jquery' ], rand(), true );
 
+        wp_enqueue_style( 'myew-owl-carousel' );
+        wp_enqueue_style( 'myew-owl-carousel-theme' );
+        wp_enqueue_script( 'myew-owl-carousel' );
         wp_enqueue_style( 'myew-style' );
         wp_enqueue_script( 'myew-script' );
     }
@@ -113,6 +120,7 @@ final class MY_Elementor_Widget {
     public function init_widgets() {
         require_once MYEW_PLUGIN_PATH . '/widgets/preview-card.php';
         require_once MYEW_PLUGIN_PATH . '/widgets/pricing-table.php';
+        require_once MYEW_PLUGIN_PATH . '/widgets/logo-carousel.php';
     }
 
     /**

@@ -17,7 +17,7 @@ class MYEW_Pricing_Table_Widget extends Widget_Base {
     }
 
     public function get_icon() {
-        return '';
+        return 'eicon-price-table';
     }
 
     public function get_categories() {

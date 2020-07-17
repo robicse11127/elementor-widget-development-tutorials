@@ -18,7 +18,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
     }
 
     public function get_icon() {
-        return '';
+        return 'eicon-lightbox';
     }
 
     public function get_categories() {
