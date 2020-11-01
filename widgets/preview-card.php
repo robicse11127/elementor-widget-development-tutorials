@@ -39,7 +39,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_control(
                 'image',
                 [
-                    'label' => __( 'Choose Image', 'plugin-domain' ),
+                    'label' => __( 'Choose Image', 'my-elementor-widget' ),
                     'type' => \Elementor\Controls_Manager::MEDIA,
                     'default' => [
                         'url' => \Elementor\Utils::get_placeholder_image_src(),
@@ -51,10 +51,10 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_control(
                 'show_image_link',
                 [
-                    'label' => __( 'Show Image Link', 'plugin-domain' ),
+                    'label' => __( 'Show Image Link', 'my-elementor-widget' ),
                     'type' => \Elementor\Controls_Manager::SWITCHER,
-                    'label_on' => __( 'Show', 'your-plugin' ),
-                    'label_off' => __( 'Hide', 'your-plugin' ),
+                    'label_on' => __( 'Show', 'my-elementor-widget' ),
+                    'label_off' => __( 'Hide', 'my-elementor-widget' ),
                     'return_value' => 'yes',
                     'default' => 'yes',
                 ]
@@ -64,9 +64,9 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_control(
                 'image_link',
                 [
-                    'label' => __( 'Image Link', 'plugin-domain' ),
+                    'label' => __( 'Image Link', 'my-elementor-widget' ),
                     'type' => \Elementor\Controls_Manager::URL,
-                    'placeholder' => __( 'https://your-link.com', 'plugin-domain' ),
+                    'placeholder' => __( 'https://your-link.com', 'my-elementor-widget' ),
                     'show_external' => true,
                     'default' => [
                         'url' => '',
@@ -94,11 +94,11 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_control(
                 'card_title',
                 [
-                    'label' => __( 'Title', 'plugin-domain' ),
+                    'label' => __( 'Title', 'my-elementor-widget' ),
                     'type' => \Elementor\Controls_Manager::TEXT,
-                    'default' => __( 'Default title', 'plugin-domain' ),
+                    'default' => __( 'Default title', 'my-elementor-widget' ),
                     'label_block' => true,
-                    'placeholder' => __( 'Type your title here', 'plugin-domain' ),
+                    'placeholder' => __( 'Type your title here', 'my-elementor-widget' ),
                 ]
             );
 
@@ -106,10 +106,10 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_control(
                 'show_divider',
                 [
-                    'label'        => __( 'Show Divider', 'plugin-domain' ),
+                    'label'        => __( 'Show Divider', 'my-elementor-widget' ),
                     'type'         => \Elementor\Controls_Manager::SWITCHER,
-                    'label_on'     => __( 'Show', 'plugin-domain' ),
-                    'label_off'    => __( 'Hide', 'plugin-domain' ),
+                    'label_on'     => __( 'Show', 'my-elementor-widget' ),
+                    'label_off'    => __( 'Hide', 'my-elementor-widget' ),
                     'return_value' => 'yes',
                     'default'      => 'yes',
                 ]
@@ -119,10 +119,10 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_control(
                 'item_description',
                 [
-                    'label' => __( 'Description', 'plugin-domain' ),
+                    'label' => __( 'Description', 'my-elementor-widget' ),
                     'type' => \Elementor\Controls_Manager::WYSIWYG,
-                    'default' => __( 'Default description', 'plugin-domain' ),
-                    'placeholder' => __( 'Type your description here', 'plugin-domain' ),
+                    'default' => __( 'Default description', 'my-elementor-widget' ),
+                    'placeholder' => __( 'Type your description here', 'my-elementor-widget' ),
                 ]
             );
 
@@ -141,10 +141,10 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_control(
                 'show_top_badge',
                 [
-                    'label' => __( 'Show Top Badge', 'plugin-domain' ),
+                    'label' => __( 'Show Top Badge', 'my-elementor-widget' ),
                     'type' => \Elementor\Controls_Manager::SWITCHER,
-                    'label_on' => __( 'Show', 'your-plugin' ),
-                    'label_off' => __( 'Hide', 'your-plugin' ),
+                    'label_on' => __( 'Show', 'my-elementor-widget' ),
+                    'label_off' => __( 'Hide', 'my-elementor-widget' ),
                     'return_value' => 'yes',
                     'default' => 'yes',
                 ]
@@ -154,10 +154,10 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_control(
                 'top_badge_text',
                 [
-                    'label' => __( 'Top Badge Text', 'plugin-domain' ),
+                    'label' => __( 'Top Badge Text', 'my-elementor-widget' ),
                     'type' => \Elementor\Controls_Manager::TEXT,
-                    'default' => __( 'On Sale!', 'plugin-domain' ),
-                    'placeholder' => __( 'Type your title here', 'plugin-domain' ),
+                    'default' => __( 'On Sale!', 'my-elementor-widget' ),
+                    'placeholder' => __( 'Type your title here', 'my-elementor-widget' ),
                     'condition' => [
                         'show_top_badge' => 'yes'
                     ]
@@ -168,10 +168,10 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_control(
                 'show_middle_badge',
                 [
-                    'label' => __( 'Show Middle Badge', 'plugin-domain' ),
+                    'label' => __( 'Show Middle Badge', 'my-elementor-widget' ),
                     'type' => \Elementor\Controls_Manager::SWITCHER,
-                    'label_on' => __( 'Show', 'your-plugin' ),
-                    'label_off' => __( 'Hide', 'your-plugin' ),
+                    'label_on' => __( 'Show', 'my-elementor-widget' ),
+                    'label_off' => __( 'Hide', 'my-elementor-widget' ),
                     'return_value' => 'yes',
                     'default' => 'yes',
                 ]
@@ -181,10 +181,10 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_control(
                 'middle_badge_text',
                 [
-                    'label' => __( 'Middle Badge Text', 'plugin-domain' ),
+                    'label' => __( 'Middle Badge Text', 'my-elementor-widget' ),
                     'type' => \Elementor\Controls_Manager::TEXT,
-                    'default' => __( '$19.99', 'plugin-domain' ),
-                    'placeholder' => __( 'Type your title here', 'plugin-domain' ),
+                    'default' => __( '$19.99', 'my-elementor-widget' ),
+                    'placeholder' => __( 'Type your title here', 'my-elementor-widget' ),
                     'condition' => [
                         'show_middle_badge' => 'yes'
                     ]
@@ -195,10 +195,10 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_control(
                 'show_bottom_badge',
                 [
-                    'label' => __( 'Show Bottom Badge', 'plugin-domain' ),
+                    'label' => __( 'Show Bottom Badge', 'my-elementor-widget' ),
                     'type' => \Elementor\Controls_Manager::SWITCHER,
-                    'label_on' => __( 'Show', 'your-plugin' ),
-                    'label_off' => __( 'Hide', 'your-plugin' ),
+                    'label_on' => __( 'Show', 'my-elementor-widget' ),
+                    'label_off' => __( 'Hide', 'my-elementor-widget' ),
                     'return_value' => 'yes',
                     'default' => 'yes',
                 ]
@@ -208,10 +208,10 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_control(
                 'bottom_badge_text',
                 [
-                    'label' => __( 'Bottom Badge Text', 'plugin-domain' ),
+                    'label' => __( 'Bottom Badge Text', 'my-elementor-widget' ),
                     'type' => \Elementor\Controls_Manager::TEXT,
-                    'default' => __( '$19.99', 'plugin-domain' ),
-                    'placeholder' => __( 'Type your title here', 'plugin-domain' ),
+                    'default' => __( '$19.99', 'my-elementor-widget' ),
+                    'placeholder' => __( 'Type your title here', 'my-elementor-widget' ),
                     'condition' => [
                         'show_bottom_badge' => 'yes'
                     ]
@@ -233,9 +233,9 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_control(
                 'button_link',
                 [
-                    'label' => __( 'Link', 'plugin-domain' ),
+                    'label' => __( 'Link', 'my-elementor-widget' ),
                     'type' => \Elementor\Controls_Manager::URL,
-                    'placeholder' => __( 'https://your-link.com', 'plugin-domain' ),
+                    'placeholder' => __( 'https://your-link.com', 'my-elementor-widget' ),
                     'show_external' => true,
                     'default' => [
                         'url' => '',
@@ -249,10 +249,10 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_control(
                 'button_text',
                 [
-                    'label' => __( 'Text', 'plugin-domain' ),
+                    'label' => __( 'Text', 'my-elementor-widget' ),
                     'type' => \Elementor\Controls_Manager::TEXT,
-                    'default' => __( 'Buy Now', 'plugin-domain' ),
-                    'placeholder' => __( 'Type your text here', 'plugin-domain' ),
+                    'default' => __( 'Buy Now', 'my-elementor-widget' ),
+                    'placeholder' => __( 'Type your text here', 'my-elementor-widget' ),
                 ]
             );
 
@@ -277,7 +277,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_responsive_control(
                 'image_width',
                 [
-                    'label' => __( 'Width', 'plugin-domain' ),
+                    'label' => __( 'Width', 'my-elementor-widget' ),
                     'type' => Controls_Manager::SLIDER,
                     'size_units' => [ 'px', '%' ],
                     'description' => 'Desfault: 100%',
@@ -306,7 +306,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_responsive_control(
                 'image_height',
                 [
-                    'label' => __( 'Height', 'plugin-domain' ),
+                    'label' => __( 'Height', 'my-elementor-widget' ),
                     'type' => Controls_Manager::SLIDER,
                     'size_units' => [ 'px', '%' ],
                     'description' => 'Desfault: 230px',
@@ -335,7 +335,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_responsive_control(
                 'image_padding',
                 [
-                    'label' => __( 'Padding', 'plugin-domain' ),
+                    'label' => __( 'Padding', 'my-elementor-widget' ),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', '%', 'em' ],
                     'default' => [
@@ -355,7 +355,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
                 \Elementor\Group_Control_Border::get_type(),
                 [
                     'name' => 'image_border',
-                    'label' => __( 'Border', 'plugin-domain' ),
+                    'label' => __( 'Border', 'my-elementor-widget' ),
                     'selector' => '{{WRAPPER}} .image-card .image-wrapper',
                 ]
             );
@@ -364,7 +364,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_responsive_control(
                 'image_border_radius',
                 [
-                    'label' => __( 'Border Radius', 'plugin-domain' ),
+                    'label' => __( 'Border Radius', 'my-elementor-widget' ),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', '%', 'em' ],
                     'default' => [
@@ -385,7 +385,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
                 \Elementor\Group_Control_Box_Shadow::get_type(),
                 [
                     'name' => 'image_box_shadow',
-                    'label' => __( 'Box Shadow', 'plugin-domain' ),
+                    'label' => __( 'Box Shadow', 'my-elementor-widget' ),
                     'selector' => '{{WRAPPER}} .image-card .image-wrapper .image',
                 ]
             );
@@ -407,7 +407,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_responsive_control(
                 'content_padding',
                 [
-                    'label' => __( 'Padding', 'plugin-domain' ),
+                    'label' => __( 'Padding', 'my-elementor-widget' ),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', '%', 'em' ],
                     'default' => [
@@ -437,7 +437,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_responsive_control(
                 'content_title_bottom_spacing',
                 [
-                    'label' => __( 'Bottom Spacing', 'plugin-domain' ),
+                    'label' => __( 'Bottom Spacing', 'my-elementor-widget' ),
                     'type' => Controls_Manager::SLIDER,
                     'size_units' => [ 'px', '%' ],
                     'description' => 'Default: 15px',
@@ -466,7 +466,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_control(
                 'content_title_color',
                 [
-                    'label' => __( 'Title Color', 'plugin-domain' ),
+                    'label' => __( 'Title Color', 'my-elementor-widget' ),
                     'type' => \Elementor\Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .image-card .title h2' => 'color: {{VALUE}}',
@@ -480,7 +480,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
                 \Elementor\Group_Control_Typography::get_type(),
                 [
                     'name' => 'content_title_typography',
-                    'label' => __( 'Typography', 'plugin-domain' ),
+                    'label' => __( 'Typography', 'my-elementor-widget' ),
                     'selector' => '{{WRAPPER}} .image-card .title h2',
                 ]
             );
@@ -499,7 +499,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_responsive_control(
                 'content_description_bottom_spacing',
                 [
-                    'label' => __( 'Bottom Spacing', 'plugin-domain' ),
+                    'label' => __( 'Bottom Spacing', 'my-elementor-widget' ),
                     'type' => Controls_Manager::SLIDER,
                     'size_units' => [ 'px', '%' ],
                     'description' => 'Default: 30px',
@@ -528,7 +528,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_control(
                 'content_description_color',
                 [
-                    'label' => __( 'Description Color', 'plugin-domain' ),
+                    'label' => __( 'Description Color', 'my-elementor-widget' ),
                     'type' => \Elementor\Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .image-card .excerpt' => 'color: {{VALUE}}',
@@ -542,7 +542,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
                 \Elementor\Group_Control_Typography::get_type(),
                 [
                     'name' => 'content_description_typography',
-                    'label' => __( 'Typography', 'plugin-domain' ),
+                    'label' => __( 'Typography', 'my-elementor-widget' ),
                     'selector' => '{{WRAPPER}} .image-card .excerpt',
                 ]
             );
@@ -565,7 +565,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_control(
                 'divider_width',
                 [
-                    'label' => __( 'Width', 'plugin-domain' ),
+                    'label' => __( 'Width', 'my-elementor-widget' ),
                     'type' => Controls_Manager::SLIDER,
                     'size_units' => [ 'px', '%' ],
                     'description' => 'Default: 100px',
@@ -594,7 +594,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_control(
                 'divider_height',
                 [
-                    'label' => __( 'Height', 'plugin-domain' ),
+                    'label' => __( 'Height', 'my-elementor-widget' ),
                     'type' => Controls_Manager::SLIDER,
                     'size_units' => [ 'px', '%' ],
                     'description' => 'Default: 2px',
@@ -623,7 +623,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_control(
                 'divider_backgorund_color',
                 [
-                    'label' => __( 'Background Color', 'plugin-domain' ),
+                    'label' => __( 'Background Color', 'my-elementor-widget' ),
                     'type' => \Elementor\Controls_Manager::COLOR,
                     'default' => 'rgba( 0,0,0,0.05 )',
                     'selectors' => [
@@ -649,7 +649,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_control(
                 'top_badge_backgorund_color',
                 [
-                    'label' => __( 'Background Color', 'plugin-domain' ),
+                    'label' => __( 'Background Color', 'my-elementor-widget' ),
                     'type' => \Elementor\Controls_Manager::COLOR,
                     'default' => '#562dd4',
                     'selectors' => [
@@ -662,7 +662,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
             $this->add_control(
                 'top_badge_text_color',
                 [
-                    'label' => __( 'Text Color', 'plugin-domain' ),
+                    'label' => __( 'Text Color', 'my-elementor-widget' ),
                     'type' => \Elementor\Controls_Manager::COLOR,
                     'default' => '#fff',
                     'selectors' => [
@@ -676,7 +676,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
                 \Elementor\Group_Control_Typography::get_type(),
                 [
                     'name' => 'top_badge_typography',
-                    'label' => __( 'Typography', 'plugin-domain' ),
+                    'label' => __( 'Typography', 'my-elementor-widget' ),
                     'selector' => '{{WRAPPER}} .image-card .image .top-price-badge',
                 ]
             );
@@ -709,7 +709,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
                     $this->add_control(
                         'but_button_normal_bg_color',
                         [
-                            'label' => __( 'Background Color', 'plugin-domain' ),
+                            'label' => __( 'Background Color', 'my-elementor-widget' ),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'default' => '#562dd4',
                             'selectors' => [
@@ -721,7 +721,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
                     $this->add_control(
                         'but_button_normal_text_color',
                         [
-                            'label' => __( 'Text Color', 'plugin-domain' ),
+                            'label' => __( 'Text Color', 'my-elementor-widget' ),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'default' => '#fff',
                             'selectors' => [
@@ -742,7 +742,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
                     $this->add_control(
                         'but_button_hover_bg_color',
                         [
-                            'label' => __( 'Background Color', 'plugin-domain' ),
+                            'label' => __( 'Background Color', 'my-elementor-widget' ),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'default' => '#707070',
                             'selectors' => [
@@ -754,7 +754,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
                     $this->add_control(
                         'but_button_hover_text_color',
                         [
-                            'label' => __( 'Text Color', 'plugin-domain' ),
+                            'label' => __( 'Text Color', 'my-elementor-widget' ),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'default' => '#fff',
                             'selectors' => [
@@ -771,7 +771,7 @@ class MYEW_Preview_Card_Widget extends Widget_Base {
                 \Elementor\Group_Control_Typography::get_type(),
                 [
                     'name' => 'buy_button_typography',
-                    'label' => __( 'Typography', 'plugin-domain' ),
+                    'label' => __( 'Typography', 'my-elementor-widget' ),
                     'selector' => '{{WRAPPER}} .image-card .readmore a.button-readmore',
                 ]
             );
