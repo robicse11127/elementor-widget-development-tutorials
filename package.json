@@ -8,7 +8,7 @@
   "author": "John Doe",
   "license": "MIT",
   "devDependencies": {
-    "grunt": "^1.1.0",
+    "grunt": "^1.5.2",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-compress": "^1.6.0",
     "grunt-contrib-concat": "^1.0.1",
